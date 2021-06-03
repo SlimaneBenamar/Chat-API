@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Socket.io scirpt-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Chat API - Slimane BENAMAR</title>
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h3 class="modal-title">Entrer votre nom d'utilisateur</h3>
+            <input id="nickname-input" class="custom-input" type="text" placeholder="nom d'utilisateur" autofocus />
+        </div>
+
+    </div>
+
+    <!--Big wrapper-->
+    <div class="big-wrapper">
+        <!-- Left Column-->
+        <div class="online-user-wrapper">
+            <div class="online-user-header-container">
+                <header>
+                    <h1>Utilisateurs en ligne</h1>
+                </header>
+            </div>
+            <div>
+                <!--afficher les utilisateurs en ligne-->
+                <ul id="users-list">
+
+                </ul>
+            </div>
+        </div>
+        <!--Chat Wrapper -->
+        <div class="chat-wrapper">
+            <div class="super-chat-title-container">
+                <header>
+                    <h1>Chat API</h1>
+                    <h2>Dévloppé par Slimane BENAMAR</h2>
+                </header>
+            </div>
+
+            <!--Messages container-->
+            <div id="chatroom">
+
+                <div id="feedback"></div>
+            </div>
+
+            <!-- Input zone -->
+            <div id="input_zone">
+                <input id="message" class="vertical-align custom-input" type="text" />
+                <button id="send_message" class="vertical-align btn" type="button">Envoyer</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- script jQuery-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Scripts-->
+    <script src="./chat.js"></script>
+    <script src="./modalScript.js"></script>
+</body>
+
+</html>
